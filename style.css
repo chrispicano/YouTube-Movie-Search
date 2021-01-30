@@ -1,0 +1,17 @@
+  
+.siteBody {
+    height: 100%;
+    width: 100%;
+    background-color: #dcdcdc;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* site navigation bar */
+#siteNavBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 3;
+}
