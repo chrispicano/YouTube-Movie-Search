@@ -3,41 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./project.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <script src="./script.js"></script>    
+    
     <script src="https://apis.google.com/js/api.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <title>Free Movie Finder</title>
 </head>
 
 <body class="siteBody">
     
     <!-- nav bar -->
-    <header class="col-xl-12">
-        <nav id="siteNavBar" class="navbar navbar-inverse">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="./index.html">YouTube Free Movie Finder</a>
-                </div>
-                <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="./index.html">Search</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+    <nav class="nav-wrapper indigo">
+        <div class="container">
+      <a href="#" class="brand-logo">Movie Previews and Reviews</a>
+      <a href="#" class="sidenav-trigger" data-target="mobile-links">
+        <i class="material-icons">menu</i>
+    </a>
+    <ul class="right hide-on-med-and-down">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Trailer</a></li>
+        <li><a href="#">Review</a></li>
+    </ul>
+    </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Trailer</a></li>
+        <li><a href="#">Review</a></li>
+    </ul>
         <br><br><br><br>
     </header>
 
-    <label for="searchBox">movie serach</label>
+    <label for="searchBox">movie search</label>
     <input id="searchBox">
     <button id="searchBtn" >Search</button>
 
@@ -53,9 +55,13 @@
         </tbody>
       </table>
 
-    <table>
-
-    </table>
+    
+    <script>
+        $(document) .ready(function() {
+            $(".sidenav").sidenav();
+        })
+    </script>
+    <script src="./project.js"></script>
 
 </body>
 
