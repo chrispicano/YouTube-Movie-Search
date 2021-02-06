@@ -1,0 +1,234 @@
+/* site navigation bar */
+#siteNavBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 3;
+}
+
+.siteBody {
+    height: 100%;
+    width: 100%;
+    background-color: whitesmoke;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: navy;
+}
+
+.siteHeader {    
+    height: 30px;
+    padding-top: 10px;
+    background-color: rgb(6, 6, 37);
+    color: white;
+    font-size: 16px;
+    font-weight:600;
+    align-content: center;
+    margin-bottom: 0px;
+    border-radius: 0%;
+}
+
+.siteHeaderTitle {
+    margin-left: 15px;
+}
+ 
+.searchHeader {
+    height: 50px;
+    padding-top: 5px;
+    background-color: lightsteelblue;
+    display: flex;
+    flex-direction: row; 
+}
+
+.searchInputContainer {
+    margin-left: 5px;
+    height: 40px;
+    max-width: 270px;    
+    display: flex;
+    align-items: left;
+    flex-direction: column;    
+}
+
+#historyBtn, #searchBtn {
+    margin-left: 5px;
+    font-size: 14px;
+    height: 40px;
+    width: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: lightsteelblue;
+    border: 0px solid transparent;
+    color: navy;
+    display: block;
+    float: left;
+}
+
+
+#historyBtn:hover,
+#searchBtn:hover {
+    color: azure;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+#searchInputLabel {
+    color: navy;
+    width: 100px;
+    height: 15px;
+    text-align: left;
+    margin-top: 5px;
+    margin-left: 15px;
+    text-indent: 5px;
+}
+
+#searchInput {
+    height: 30px;
+    width: 215px;    
+    margin-left: 5px;
+    height: 30px;
+    background-color: lightsteelblue;
+    border-top: 0px solid transparent;
+    border-right: 0px solid transparent;
+    border-left: 0px solid transparent;
+    border-bottom: 3px solid azure;
+    color: navy;
+    flex-shrink: inherit;
+}
+
+
+.sectionContainer {
+    min-height: 260px;
+    padding: 5px;
+    margin: 10px;
+    background-color: ghostwhite;
+    border: 1px solid gray;
+    box-shadow: 1px 2px 2px 1px lightslategray;
+    display: flex;
+}
+
+.titleSectionContainer {
+    text-indent: 5px;
+    flex-direction: column;
+}
+
+.todaySectionTitle {
+    padding-bottom: 15px;
+}
+
+
+.titleCaption {
+    font-size: 17px;
+    font-weight: 500;
+    width: 140px;
+    text-align: left;
+}
+
+.titleTag {
+    width: 20px;
+}
+
+.titleSectionRow {
+    margin-left: 5px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+.aboveSectionTitle {
+    color: navy;
+    text-indent: 5px;
+}
+
+.searchedCityUl {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    list-style: none;
+}
+
+.searchedCityLi {
+    height: 40px;
+    color: navy;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    border-bottom-style: 2px solid steelblue;
+}
+
+.resultsContainer {
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-flow: wrap;
+}
+
+.resultBlock {
+    margin: 20px;
+    height: 190px;
+    max-width: 190px;
+    min-width: 190px;
+    background-color: lightgray;
+    color: navy;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.resultBlockCaption {
+    font-size: 13px;
+}
+
+#invisibleDayBlock {
+    display: none;
+    background-color: transparent;
+}
+
+
+/* add invisible dayBlock to 'left justify' wrap row */
+@media screen and (max-width: 972px) {  
+    #invisibleDayBlock {
+        display: block;
+    }
+
+}
+
+
+@media screen and (max-width: 590px) {  
+
+    .resultsContainer {
+        flex-direction: column;
+        flex-flow: column;
+    }
+
+    .resultBlock {
+        max-width: 90%;
+        min-width: 90%;
+        margin: 10px;
+    }
+}
+
+
+
+.videoIcon {
+    padding-bottom: 5px;
+}
+
+.uvIndexContainer {
+    height: 50px;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+}
+
+.uvIndexBlock {
+    height: 30px;
+    width: 70px;
+    color: white;
+    background-color: darkorange;
+    text-align: center;
+    padding-top: 4px;
+}
