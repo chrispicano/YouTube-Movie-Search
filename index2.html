@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="./style2.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./style2.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="./script2.js"></script>    
     <script src="https://apis.google.com/js/api.js"></script>
@@ -16,26 +18,30 @@
 <body class="siteBody">
     
     <!-- nav bar -->
-    <header class="col-xl-12">
-        <nav id="siteNavBar" class="navbar navbar-inverse">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="./index.html">YouTube Free Movie Finder</a>
-                </div>
-                <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="./index.html">Search</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <br><br><br><br>
-    </header>
+    <nav class="nav-wrapper black">
+        <div class="container">
+      <a href="#" class="brand-logo">Movie Previews and Reviews</a>
+      <a href="#" class="sidenav-trigger" data-target="mobile-links">
+        <i class="material-icons">menu</i>
+    </a>
+    <ul class="right hide-on-med-and-down">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Trailer</a></li>
+        <li><a href="#">Reviews</a></li>
+    </ul>
+    </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Trailer</a></li>
+        <li><a href="#">Review</a></li>
+    </ul>
+    <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+        </ul>
+    </div>
+
 
     <nav class="searchHeader">        
         <div class="searchInputContainer">
@@ -43,27 +49,27 @@
         </div>
         <button id="searchBtn">
             <span class="glyphicon glyphicon-search"></span>
-        </button>  
-        <button id="movieclipsBtn">Get Movieclips</button>
+            <i class="material-icons">search</i>
+         </button>  
     </nav>
 
     <main class="container-fluid">
         <div class="row col-12">
             <div class="sectionContainer titleSectionContainer">
-                <h3 id="todaySectionTitle">Reuslts From YouTube</h3>
+                <!-- <h3 id="todaySectionTitle">Results From YouTube</h3> -->
                 <br>
 
                 <div class="titleSectionRow">
-                    <p class="titleCaption">Video Search: </p>                    
+                   <!-- <p class="titleCaption">Video Search: </p> -->                   
                     <span>
-                        <p id="serachTitle" class="titleCaption titleTag" id="tempCaption">
+                        <p id="searchTitle" class="titleCaption titleTag" id="tempCaption">
                             
                         </p>
                     </span>
-                </div>
+                </div> 
 
                 <div class="titleSectionRow">
-                    <p class="titleCaption">Channel: </p>               
+                  <!-- <p class="titleCaption">Channel: </p> -->              
                     <span>
                         <p id="searchChannel" class="titleCaption titleTag">
                             
