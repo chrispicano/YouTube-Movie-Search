@@ -7,6 +7,11 @@
     text-align: center;
     z-index: 3;
 }
+/* centers text in nav bar */
+nav .brand-logo {
+    text-align: center;
+    font-size: 20px;
+}
 
 .siteBody {
     height: 100%;
@@ -71,6 +76,10 @@
     cursor: pointer;
 }
 
+.search-icon {
+    margin-top: 0px;
+    padding-top: 0;
+}
 
 #searchInputLabel {
     color: navy;
@@ -114,6 +123,7 @@
 
 .todaySectionTitle {
     padding-bottom: 15px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 
@@ -232,3 +242,4 @@
     text-align: center;
     padding-top: 4px;
 }
+
