@@ -8,6 +8,11 @@
     text-align: center;
     z-index: 3;
 }
+/* centers text in nav bar */
+nav .brand-logo {
+    text-align: center;
+    font-size: 20px;
+}
 
 nav .brand-logo {
     text-align: center;
@@ -79,6 +84,10 @@ nav .brand-logo {
     cursor: pointer;
 }
 
+.search-icon {
+    margin-top: 0px;
+    padding-top: 0;
+}
 
 #searchInputLabel {
     color: navy;
@@ -123,7 +132,11 @@ nav .brand-logo {
 
 /*.todaySectionTitle {
     padding-bottom: 15px;
-}*/
+
+
+    font-family: 'Times New Roman', Times, serif;
+}
+
 
 
 .titleCaption {
@@ -242,11 +255,12 @@ nav .brand-logo {
     padding-top: 4px;
 }
 
-.sectionContainer{
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6xSeDOQtA7JkHZxEENkEtGzudfH4tJCZpQQ&usqp=CAU);
-}
 
 .material-icons{
     margin: 0;
     padding: 0;
 }
+.sectionContainer{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6xSeDOQtA7JkHZxEENkEtGzudfH4tJCZpQQ&usqp=CAU);
+}
+
