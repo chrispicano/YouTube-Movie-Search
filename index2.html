@@ -4,10 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style2.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="./style2.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="./script2.js"></script>
     <script src="https://apis.google.com/js/api.js"></script>
@@ -18,6 +22,8 @@
 <body class="siteBody">
 
     <!-- nav bar -->
+
+
         <!--new nav-->
         <nav class="nav-wrapper black">
             <div class="container">
@@ -46,36 +52,40 @@
         <br><br><br><br>
     </header>
 
+
     <nav class="searchHeader">
         <div class="searchInputContainer">
             <input id="searchInput" placeholder="Search Titles">
         </div>
         <button id="searchBtn">
             <span class="glyphicon glyphicon-search"></span>
-        </button>
-        <!-- <button id="movieclipsBtn">Get Movieclips</button>  -->
-        
-        <button class="btn waves-effect waves-light black " type="submit" name="action">Get Movie Clips</button>
-        
+
+            <i class="material-icons">search</i>
+         </button>  
+
     </nav>
 
     <main class="container-fluid">
         <div class="row col-12">
             <div class="sectionContainer titleSectionContainer">
-                <h3 id="todaySectionTitle">Reuslts From YouTube</h3>
+                <!-- <h3 id="todaySectionTitle">Results From YouTube</h3> -->
                 <br>
 
                 <div class="titleSectionRow">
-                    <p class="titleCaption">Video Search: </p>
+
+                   <!-- <p class="titleCaption">Video Search: </p> -->                   
                     <span>
-                        <p id="serachTitle" class="titleCaption titleTag" id="tempCaption">
+                        <p id="searchTitle" class="titleCaption titleTag" id="tempCaption">
+                            
 
                         </p>
                     </span>
-                </div>
+                </div> 
 
                 <div class="titleSectionRow">
-                    <p class="titleCaption">Channel: </p>
+
+                  <!-- <p class="titleCaption">Channel: </p> -->              
+
                     <span>
                         <p id="searchChannel" class="titleCaption titleTag">
 
