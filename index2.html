@@ -1,50 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="./style2.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <script src="./script2.js"></script>    
+    <script src="./script2.js"></script>
     <script src="https://apis.google.com/js/api.js"></script>
-    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <title>Movie Previews and Reviews</title>
 </head>
-
+ 
 <body class="siteBody">
-    
+
     <!-- nav bar -->
-    <header class="col-xl-12">
-        <nav id="siteNavBar" class="navbar navbar-inverse">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="./index.html">YouTube Free Movie Finder</a>
-                </div>
-                <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="./index.html">Search</a></li>
-                    </ul>
-                </div>
-            </div>
+        <!--new nav-->
+        <nav class="nav-wrapper black">
+            <div class="container">
+          <a href="#" class="brand-logo">Movie Previews and Reviews</a>
+          <a href="#" class="sidenav-trigger" data-target="mobile-links">
+            <i class="material-icons">menu</i>
+        </a>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Trailer</a></li>
+            <li><a href="#">Reviews</a></li>
+        </ul>
+        </div>
         </nav>
+    
+        <ul class="sidenav" id="mobile-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Trailer</a></li>
+            <li><a href="#">Review</a></li>
+        </ul>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="./index.html">Reviews!</a></li>
+            </ul>
+        </div>
         <br><br><br><br>
     </header>
 
-    <nav class="searchHeader">        
+    <nav class="searchHeader">
         <div class="searchInputContainer">
             <input id="searchInput" placeholder="Search Titles">
         </div>
         <button id="searchBtn">
             <span class="glyphicon glyphicon-search"></span>
-        </button>  
-        <button id="movieclipsBtn">Get Movieclips</button>
+        </button>
+        <!-- <button id="movieclipsBtn">Get Movieclips</button>  -->
+        
+        <button class="btn waves-effect waves-light black " type="submit" name="action">Get Movie Clips</button>
+        
     </nav>
 
     <main class="container-fluid">
@@ -54,19 +66,19 @@
                 <br>
 
                 <div class="titleSectionRow">
-                    <p class="titleCaption">Video Search: </p>                    
+                    <p class="titleCaption">Video Search: </p>
                     <span>
                         <p id="serachTitle" class="titleCaption titleTag" id="tempCaption">
-                            
+
                         </p>
                     </span>
                 </div>
 
                 <div class="titleSectionRow">
-                    <p class="titleCaption">Channel: </p>               
+                    <p class="titleCaption">Channel: </p>
                     <span>
                         <p id="searchChannel" class="titleCaption titleTag">
-                            
+
                         </p>
                     </span>
                 </div>
@@ -77,36 +89,42 @@
         <div class="row col-12">
             <div class="sectionContainer resultsContainer">
                 <div id="block0" class="resultBlock">
-                    <img id="videoIcon0" class="videoIcon" ></img>
+                    <img id="videoIcon0" class="videoIcon"></img>
                     <h4 id="resultBlockTitle0" class="resultBlockTitle"></h4>
                     <p id="resultBlockCaption0" class="resultBlockCaption"></p>
                 </div>
                 <div id="block1" class="resultBlock">
-                    <img id="videoIcon1" class="videoIcon" ></img>
+                    <img id="videoIcon1" class="videoIcon"></img>
                     <h4 id="resultBlockTitle1" class="resultBlockTitle"></h4>
                     <p id="resultBlockCaption1" class="resultBlockCaption"></p>
                 </div>
                 <div id="block2" class="resultBlock">
-                    <img id="videoIcon2" class="videoIcon" ></img>
+                    <img id="videoIcon2" class="videoIcon"></img>
                     <h4 id="resultBlockTitle2" class="resultBlockTitle"></h4>
                     <p id="resultBlockCaption2" class="resultBlockCaption"></p>
                 </div>
                 <div id="block3" class="resultBlock">
-                    <img id="videoIcon3" class="videoIcon" ></img>
+                    <img id="videoIcon3" class="videoIcon"></img>
                     <h4 id="resultBlockTitle3" class="resultBlockTitle"></h4>
                     <p id="resultBlockCaption3" class="resultBlockCaption"></p>
                 </div>
                 <div id="block4" class="resultBlock">
-                    <img id="videoIcon4" class="videoIcon" ></img>
+                    <img id="videoIcon4" class="videoIcon"></img>
                     <h4 id="resultBlockTitle4" class="resultBlockTitle"></h4>
                     <p id="resultBlockCaption4" class="resultBlockCaption"></p>
                 </div>
+                <!--Invisble collum for alignment-->
                 <div id="invisibleDayBlock" class="resultBlock">
 
                 </div>
             </div>
         </div>
     </main>
+    <script>
+        $(document) .ready(function() {
+            $(".sidenav").sidenav();
+        })
+    </script>
 
 </body>
 

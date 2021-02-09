@@ -44,7 +44,7 @@ window.onload = function() {
         })
     });
 
-    // movieClipsBtn.addEventListener("click", function() {
+    // movieclipsBtn.addEventListener("click", function() {
 
     // })
 
