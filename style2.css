@@ -23,7 +23,7 @@ nav .brand-logo {
 .siteBody {
     height: 100%;
     width: 100%;
-    background-color: whitesmoke;
+    background-color: black;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgb(0, 119, 255);
 }
@@ -130,7 +130,7 @@ nav .brand-logo {
     flex-direction: column;
 }
 
-/*.todaySectionTitle {
+ .todaySectionTitle {
     padding-bottom: 15px;
 
 
@@ -158,7 +158,7 @@ nav .brand-logo {
 }
 
 .aboveSectionTitle {
-    color: black;
+    color: white;
     text-indent: 5px;
 }
 
@@ -221,7 +221,7 @@ nav .brand-logo {
 
 @media screen and (max-width: 590px) {  
 
-    /*.resultsContainer {
+    .resultsContainer {
         flex-direction: column;
         flex-flow: column;
     }
@@ -230,7 +230,7 @@ nav .brand-logo {
         max-width: 90%;
         min-width: 90%;
         margin: 10px;
-    }*/
+    }
 }
 
 
@@ -261,6 +261,8 @@ nav .brand-logo {
     padding: 0;
 }
 .sectionContainer{
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6xSeDOQtA7JkHZxEENkEtGzudfH4tJCZpQQ&usqp=CAU);
+    background-image: url(https://static.alphacoders.com/thumbs_categories/20.jpg);
+    box-shadow: 3px 3px blueviolet, -1em 0 .4em teal;
+    opacity: 0.8;
 }
 
