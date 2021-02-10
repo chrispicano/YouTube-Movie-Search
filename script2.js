@@ -31,6 +31,7 @@ window.onload = function () {
                     let blockTitleEl = document.querySelector("#resultBlockTitle" + i);
                     let videoIconEl = document.querySelector("#videoIcon" + i);
                     let resultBlockCaptionEl = document.querySelector("#resultBlockCaption" + i);
+                    let videoID = data.items[i].id.videoId;
                     console.log(data)
 
                     //set content fron result
